@@ -98,7 +98,7 @@ main > section{
 
 /* Team Section Styles */
 .teams{
-  gap: 74px;
+  /* gap: 74px; */
   align-items: center;
 }
 .team-img-container{
@@ -111,6 +111,11 @@ main > section{
   width: 342px;
   height: 342px;
 }
+.team-content{
+  width: 540px;
+  height: 304px;
+  margin-left: 74px;
+}
 .team-title{
   font-size: 45px;
   font-weight: 500;
@@ -122,6 +127,9 @@ main > section{
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
+  main > section{
+    margin-top: 20px;
+  }
 .nav-bar{
   flex-direction: column;
 }
@@ -145,4 +153,41 @@ main > section{
  .banner-content{
   margin-bottom: 40px;
  }
+  .teams{
+  flex-direction: column;
+ }
+
+ .team-img-container{
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .team-img-container img{
+  width: 170px;
+  height: auto;
+ }
+.team-content{
+   display: contents;
+   
+}
+.team-title{
+  font-size: 20px;
+  order: 1;
+  text-align: center;
+}
+#team-des{
+  order: 2;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#team-btn{
+  order: 3;
+  margin-bottom: 25px;
+}
+.team-img-container{
+order: 4;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}   
 }
