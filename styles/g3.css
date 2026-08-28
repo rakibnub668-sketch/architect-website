@@ -94,7 +94,7 @@ main > section{
 .banner-img{
   width: 100%;
 }
-/* Main Section */
+/* Main Section Styles*/
 
 /* Team Section Styles */
 .teams{
@@ -115,6 +115,7 @@ main > section{
   width: 540px;
   height: 304px;
   margin-left: 74px;
+  
 }
 .team-title{
   font-size: 45px;
@@ -125,10 +126,13 @@ main > section{
   margin: 24px auto 32px auto;
 }
 /* Responsive Media Query */
+.hide{
+  display: none;
+}
 
 @media screen and (max-width: 576px) {
   main > section{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 .nav-bar{
   flex-direction: column;
@@ -139,11 +143,16 @@ main > section{
 .nav-link{
   font-size: .8rem;
 }
+.nav-links{
+  padding: 0;
+  margin: 0;
+}
 .banner-title{
   font-size: 1.9rem;
-}
+  }
 .description{
-  font-size: 12px;
+  font-size: 10px;
+  padding: 10px;
 }
  .primary-btn{
   font-size: 11px;
@@ -151,43 +160,46 @@ main > section{
   font-weight: 500;
  } 
  .banner-content{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
  }
   .teams{
   flex-direction: column;
  }
-
- .team-img-container{
-  grid-template-columns: repeat(2, 1fr);
- }
  .team-img-container img{
-  width: 170px;
+  width: 150px;
   height: auto;
  }
 .team-content{
    display: contents;
-   
 }
 .team-title{
   font-size: 20px;
   order: 1;
   text-align: center;
+  margin: 0;
+ 
 }
 #team-des{
   order: 2;
   font-size: 10px;
   text-align: center;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #team-btn{
   order: 3;
-  margin-bottom: 25px;
+  margin: 0;
 }
 .team-img-container{
 order: 4;
 grid-template-columns: repeat(2, 1fr);
 gap: 10px;
+width: 100%;
+max-width: 320px;
+height: auto;
+margin-top: 30px;
 }   
+
+
 }
